@@ -334,14 +334,15 @@ class StockMonitorApp(QMainWindow):
             }
             QLineEdit {
                 font-size: 9pt;
-             padding: 5px;
+                padding: 5px;
                 height: 30px;
+                margin-bottom: 15px;  /* 입력필드와 버튼 사이 간격 조절 */
             }
             QPushButton {
                 background-color: #fa9b5c;  /* 기본 배경색 */
                 padding: 10px;
-                font-size: 10pt;
-                border-radius: 20px;  /* 버튼의 모서리를 둥글게 설정 */
+                font-size: 9pt;
+                border-radius: 15px;  /* 버튼의 모서리를 둥글게 설정 */
                 border: none;  /* outline 대신 border를 none으로 설정 */
                 color: black;  /* 기본 텍스트 색상 설정 */
             }
@@ -357,6 +358,18 @@ class StockMonitorApp(QMainWindow):
                 color: white;
                 padding: 5px;
                 font-size: 9pt;
+            }
+            /* 타이틀 라벨과 입력필드 사이 간격 조절 */
+            QLabel[role="title"] {
+                margin-bottom: 20px;  /* 타이틀과 입력필드 사이 간격 조절 */
+            }
+            /* 입력필드와 버튼 사이 간격 조절 */
+            QHBoxLayout QLineEdit {
+                margin-bottom: 15px;  /* 입력필드와 버튼 사이 간격 */
+            }
+            /* 버튼과 리스트 테이블 간격 조절 */
+            QVBoxLayout QPushButton {
+                margin-bottom: 15px;  /* 버튼과 리스트 테이블 사이 간격 */
             }
         """)
 
