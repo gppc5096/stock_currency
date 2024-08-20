@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import yfinance as yf
@@ -9,6 +10,8 @@ from PyQt5.QtGui import QPalette, QColor, QFont
 class StockMonitorApp(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.data_file = os.path.join(
+            os.path.dirname(__file__), 'stock_data.json')
         self.initUI()
 
     def initUI(self):
@@ -327,13 +330,13 @@ class StockMonitorApp(QMainWindow):
         self.setStyleSheet("""
             QWidget {
                 font-family: '맑은 고딕';
-                font-size: 9pt;
+                font-size: 10pt;
             }
             QLabel {
-                font-size: 9pt;
+                font-size: 10pt;
             }
             QLineEdit {
-                font-size: 9pt;
+                font-size: 10pt;
                 padding: 5px;
                 height: 30px;
                 margin-bottom: 15px;  /* 입력필드와 버튼 사이 간격 조절 */
@@ -341,7 +344,7 @@ class StockMonitorApp(QMainWindow):
             QPushButton {
                 background-color: #fa9b5c;  /* 기본 배경색 */
                 padding: 10px;
-                font-size: 9pt;
+                font-size: 10pt;
                 border-radius: 15px;  /* 버튼의 모서리를 둥글게 설정 */
                 border: none;  /* outline 대신 border를 none으로 설정 */
                 color: black;  /* 기본 텍스트 색상 설정 */
@@ -351,13 +354,13 @@ class StockMonitorApp(QMainWindow):
                 color: white;  /* 마우스를 버튼 위에 올렸을 때 글자 색상을 흰색으로 설정 */
             }
             QTableWidget {
-                font-size: 9pt;
+                font-size: 10pt;  /* 리스트 셀의 폰트 크기 설정 */
             }
             QHeaderView::section {
-                background-color: #abaaa7;
-                color: white;
+                background-color: #5b5978;  /* 헤더 배경색 설정 */
+                color: white;  /* 헤더 폰트 색상 설정 */
+                font-size: 10pt;  /* 헤더 폰트 크기 설정 */
                 padding: 5px;
-                font-size: 9pt;
             }
             /* 타이틀 라벨과 입력필드 사이 간격 조절 */
             QLabel[role="title"] {
