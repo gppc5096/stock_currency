@@ -1,0 +1,38 @@
+[
+    {
+        "ticker": "SMH",
+        "one_year_price": "$150.14",
+        "six_month_price": "$197.78",
+        "current_price": "$251.34"
+    },
+    {
+        "ticker": "SPLG",
+        "one_year_price": "$50.93",
+        "six_month_price": "$58.02",
+        "current_price": "$65.82"
+    },
+    {
+        "ticker": "QQQ",
+        "one_year_price": "$361.41",
+        "six_month_price": "$426.08",
+        "current_price": "$481.27"
+    },
+    {
+        "ticker": "QQQM",
+        "one_year_price": "$148.64",
+        "six_month_price": "$175.29",
+        "current_price": "$198.07"
+    },
+    {
+        "ticker": "TQQQ",
+        "one_year_price": "$37.58",
+        "six_month_price": "$55.67",
+        "current_price": "$71.30"
+    },
+    {
+        "ticker": "TSLA",
+        "one_year_price": "$231.28",
+        "six_month_price": "$193.76",
+        "current_price": "$222.72"
+    }
+]
